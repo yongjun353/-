@@ -3,14 +3,14 @@
 int main()
 {
     char str[100] = ""; // SecurityFirst
-    printf("[>] ¹®ÀÚ¿­ ÀÔ·Â\n\n");
+    printf("[>] ë¬¸ìì—´ ì…ë ¥\n\n");
     printf("[<]");
     scanf("%s", str);
     int i;
     for (i = 0; *(str + i) != '\0'; i++); //printf("%#x", str + i)
 
 
-    printf("[>] ¹®ÀÚ °³¼ö : %d\n", i);
+    printf("[>] ë¬¸ì ê°œìˆ˜ : %d\n", i);
 }
 */
 /*#include <stdio.h>
@@ -25,7 +25,7 @@ int main()
         if (str1[i] > max) max = str1[i];
     }
 
-    printf("ÃÖ´ë °ªÀº %dÀÔ´Ï´Ù!",max);
+    printf("ìµœëŒ€ ê°’ì€ %dì…ë‹ˆë‹¤!",max);
     return 0;
 
 }
@@ -61,18 +61,18 @@ int main()
 }
 */
 
-//ºüÁø Ä«µå Ã£±â
+//ë¹ ì§„ ì¹´ë“œ ì°¾ê¸°
 /*#include <stdio.h>
 int main()
 {
     int total = 0;
     
     do{
-        printf("[>] ÀüÃ¼ Ä«µå : ");
+        printf("[>] ì „ì²´ ì¹´ë“œ : ");
         scanf("%d", &total);
     } while (total < 3 || total > 50);
     
-    printf("\n[>] Ä«µåÀÔ·Â :\n");
+    printf("\n[>] ì¹´ë“œì…ë ¥ :\n");
     
     
         
@@ -88,7 +88,7 @@ int main()
     char change = 0;
     char text[100] = "";
 
-    printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä\n[>] ");
+    printf("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš”\n[>] ");
     scanf("%s", &text);
 
     input(text)
@@ -97,7 +97,7 @@ int main()
 }
 */
 
-//ºüÁøÄ«µå Ã£±â
+//ë¹ ì§„ì¹´ë“œ ì°¾ê¸°
 /*
 #include <stdio.h>
 
@@ -105,111 +105,111 @@ int main() {
     int str[100]; 
     int N, num = 0;
     int total = 0;
-    printf("[>] ÀüÃ¼ Ä«µå : ");
+    printf("[>] ì „ì²´ ì¹´ë“œ : ");
     scanf("%d", &N);
     printf("\n");
 
-    printf("[>] Ä«µå ÀÔ·Â : \n");
-    for (int i = 0; i < N - 1; i++) { // ¹è¿­ÀÇ ½ÃÀÛÀº 0ÀÌ¹Ç·Î N-1·Î Á¶°ÇÀ» ¸¸µë
-        scanf("%d", &str[i]); // °¢ º£¿­¿¡ ÀÔ·Â¹ŞÀº ¼ıÀÚ¸¦ ÇÒ´çÇÔ
+    printf("[>] ì¹´ë“œ ì…ë ¥ : \n");
+    for (int i = 0; i < N - 1; i++) { // ë°°ì—´ì˜ ì‹œì‘ì€ 0ì´ë¯€ë¡œ N-1ë¡œ ì¡°ê±´ì„ ë§Œë“¬
+        scanf("%d", &str[i]); // ê° ë² ì—´ì— ì…ë ¥ë°›ì€ ìˆ«ìë¥¼ í• ë‹¹í•¨
     }
-    for (int j = 0; j < N - 1; j++) { // ¹è¿­ÀÇ ½ÃÀÛÀº 0ÀÌ¹Ç·Î N-1·Î Á¶°ÇÀ» ¸¸µë
+    for (int j = 0; j < N - 1; j++) { // ë°°ì—´ì˜ ì‹œì‘ì€ 0ì´ë¯€ë¡œ N-1ë¡œ ì¡°ê±´ì„ ë§Œë“¬
         
-        num += str[j]; // num ÀÔ·Â¹ŞÀº ¼ö¸¦ °è¼Ó ´õÇÔ
+        num += str[j]; // num ì…ë ¥ë°›ì€ ìˆ˜ë¥¼ ê³„ì† ë”í•¨
     }
-    for (int m = 1; m <= N; m++) { //mÀÌ 1ºÎÅÍ ´õÇØÁö¸é¼­ Nº¸´Ù ÀÛÀ»¶§±îÁö ´õÇÔ
-        total += m; //total¿¡ 1ºÎÅÍ N±îÁöÀÇ ¼ıÀÚ¸¦ ´õÇÔ
+    for (int m = 1; m <= N; m++) { //mì´ 1ë¶€í„° ë”í•´ì§€ë©´ì„œ Në³´ë‹¤ ì‘ì„ë•Œê¹Œì§€ ë”í•¨
+        total += m; //totalì— 1ë¶€í„° Nê¹Œì§€ì˜ ìˆ«ìë¥¼ ë”í•¨
     }
-    printf("\n[<] ºüÁø Ä«µå : %d\n", total - num);
+    printf("\n[<] ë¹ ì§„ ì¹´ë“œ : %d\n", total - num);
 }
 */    
     
-    /*for (int i = 1; i < N; i++) { //i°¡ Nº¸´Ù ÀÛÀ»¶§±îÁö ¹İº¹ ³¡³ª°í 1Ãß°¡
+    /*for (int i = 1; i < N; i++) { //iê°€ Në³´ë‹¤ ì‘ì„ë•Œê¹Œì§€ ë°˜ë³µ ëë‚˜ê³  1ì¶”ê°€
         int card;
         scanf("%d", &card);
-        sum += card; //ÀÔ·Â¹ŞÀº ¼ıÀÚÀÇ Ä«µå °ªÀ» ´Ù ´õÇØ¼­ sum¿¡ ÀúÀå
+        sum += card; //ì…ë ¥ë°›ì€ ìˆ«ìì˜ ì¹´ë“œ ê°’ì„ ë‹¤ ë”í•´ì„œ sumì— ì €ì¥
     }
     int total = 0;
-    for (int j = 1; j <= N; j++) { //j°¡ Nº¸´Ù ÀÛÀ»¶§±îÁö ¹İº¹ ³¡³ª°í 1Ãß°¡
-        total += j; //total¿¡ 1ºÎÅÍ N±îÁöÀÇ ¼ıÀÚ¸¦ ´õÇÔ
+    for (int j = 1; j <= N; j++) { //jê°€ Në³´ë‹¤ ì‘ì„ë•Œê¹Œì§€ ë°˜ë³µ ëë‚˜ê³  1ì¶”ê°€
+        total += j; //totalì— 1ë¶€í„° Nê¹Œì§€ì˜ ìˆ«ìë¥¼ ë”í•¨
     }
     /*
-    //int total = (N * (N + 1)) / 2; //µîÂ÷¼ö¿­ÀÇ ÇÕ°ø½ÄÀ¸·Î ÀüÃ¼ÀÇ ¼öÀÇ ÇÕÀ» ±¸ÇÔ
-    printf("\n[<] ºüÁø Ä«µå : %d\n", total - sum); //ºüÁøÄ«µå °è»ê
+    //int total = (N * (N + 1)) / 2; //ë“±ì°¨ìˆ˜ì—´ì˜ í•©ê³µì‹ìœ¼ë¡œ ì „ì²´ì˜ ìˆ˜ì˜ í•©ì„ êµ¬í•¨
+    printf("\n[<] ë¹ ì§„ ì¹´ë“œ : %d\n", total - sum); //ë¹ ì§„ì¹´ë“œ ê³„ì‚°
 
     return 0;
 }
 
 
-// ¹®ÀÚ¿­ Ä¡È¯ÇÏ±â
+// ë¬¸ìì—´ ì¹˜í™˜í•˜ê¸°
 
 /*#include <stdio.h>
 
 int main() {
     char str[100], *ptr, ch1, ch2;
 
-    printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä\n[>] ");
-    scanf("%s", str); // ¹®ÀÚ¿­ ÀÔ·Â
+    printf("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš”\n[>] ");
+    scanf("%s", str); // ë¬¸ìì—´ ì…ë ¥
 
-    printf("\nº¯°æÇÒ ¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä\n[>] ");
-    scanf(" %c", &ch1); // º¯°æÇÒ ¹®ÀÚ ÀÔ·Â
-    printf("\nÄ¡È¯ÇÒ ¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä\n[>] ");
-    scanf(" %c", &ch2); //Ä¡È¯ÇÒ ¹®ÀÚ ÀÔ·Â
+    printf("\në³€ê²½í•  ë¬¸ìë¥¼ ì…ë ¥í•˜ì„¸ìš”\n[>] ");
+    scanf(" %c", &ch1); // ë³€ê²½í•  ë¬¸ì ì…ë ¥
+    printf("\nì¹˜í™˜í•  ë¬¸ìë¥¼ ì…ë ¥í•˜ì„¸ìš”\n[>] ");
+    scanf(" %c", &ch2); //ì¹˜í™˜í•  ë¬¸ì ì…ë ¥
 
-   for (ptr = str; *ptr != '\0'; ptr++) { // ¹®ÀÚ¿­ÀÇ ³¡Àº Ç×»ó nullÀÌ±â ‹š¹®ÀÌ´Ù for¹®ÀÌ ÇÑ¹ø µ¹‹š¸¶´Ù ptrÀÇ ´ÙÀ½ ¹®ÀÚ¸¦ °Ë»çÇÔ
-        if (*ptr == ch1) { // ¸¸¾à *ptrÀÌ ch1°ú °°´Ù¸é 
-            *ptr = ch2; // ch2·Î º¯°æ
+   for (ptr = str; *ptr != '\0'; ptr++) { // ë¬¸ìì—´ì˜ ëì€ í•­ìƒ nullì´ê¸° Â‹Âšë¬¸ì´ë‹¤ forë¬¸ì´ í•œë²ˆ ëŒÂ‹Âšë§ˆë‹¤ ptrì˜ ë‹¤ìŒ ë¬¸ìë¥¼ ê²€ì‚¬í•¨
+        if (*ptr == ch1) { // ë§Œì•½ *ptrì´ ch1ê³¼ ê°™ë‹¤ë©´ 
+            *ptr = ch2; // ch2ë¡œ ë³€ê²½
         }
     }
    
-    printf("\n[<] Ä¡È¯µÈ ¹®ÀÚ´Â %sÀÔ´Ï´Ù", str);
+    printf("\n[<] ì¹˜í™˜ëœ ë¬¸ìëŠ” %sì…ë‹ˆë‹¤", str);
 
     return 0;
 }
 */
 
-//È¯À²°è»ê±â
+//í™˜ìœ¨ê³„ì‚°ê¸°
 /*#include <stdio.h>
 
-void money(int* amount, int* choose) {//  amount¿Í choose¸¦ ¹Ù²Ù±â À§ÇØ¼­ Æ÷ÀÎÅÍ·Î ¹ŞÀ½
+void money(int* amount, int* choose) {//  amountì™€ chooseë¥¼ ë°”ê¾¸ê¸° ìœ„í•´ì„œ í¬ì¸í„°ë¡œ ë°›ìŒ
    
-    printf("[>] ¿øÈ­¸¦ ´Ù¸¥ È­Æó·Î È¯ÀüÇÏ´Â °è»ê±â ÀÔ´Ï´Ù.\n");
-    printf(" È¯ÀüÇÏ°í ½ÍÀº È­Æó¸¦ °ñ¶óÁÖ¼¼¿ä\n");
-    printf("[>] 1. ´Ş·¯, 2. À¯·Î, 3. ÆÄ¿îµå, 4. ¿£, 5. À§¾È\n[<] ");
-    scanf("%d", choose); //Æ÷ÀÎÅÍ·Î ¹Ş¾Ò±â ¶§¹®¿¡ &¸¦ ¾µÇÊ¿ä x
+    printf("[>] ì›í™”ë¥¼ ë‹¤ë¥¸ í™”íë¡œ í™˜ì „í•˜ëŠ” ê³„ì‚°ê¸° ì…ë‹ˆë‹¤.\n");
+    printf(" í™˜ì „í•˜ê³  ì‹¶ì€ í™”íë¥¼ ê³¨ë¼ì£¼ì„¸ìš”\n");
+    printf("[>] 1. ë‹¬ëŸ¬, 2. ìœ ë¡œ, 3. íŒŒìš´ë“œ, 4. ì—”, 5. ìœ„ì•ˆ\n[<] ");
+    scanf("%d", choose); //í¬ì¸í„°ë¡œ ë°›ì•˜ê¸° ë•Œë¬¸ì— &ë¥¼ ì“¸í•„ìš” x
 
-    printf("\n[>] ¾ó¸¶¸¦ È¯ÀüÇÏ½Ã°Ú½À´Ï±î?\n");
-    printf("[>] ÀÔ·Â °ªÀº 0 < x < 100000000 À¸·Î Á¦ÇÑµË´Ï´Ù.\n[<] ");
+    printf("\n[>] ì–¼ë§ˆë¥¼ í™˜ì „í•˜ì‹œê² ìŠµë‹ˆê¹Œ?\n");
+    printf("[>] ì…ë ¥ ê°’ì€ 0 < x < 100000000 ìœ¼ë¡œ ì œí•œë©ë‹ˆë‹¤.\n[<] ");
     scanf("%d", amount);
 }
 
-void input(int amount, int choose) { //°ªÀ» ºÒ·¯¿À±â À§ÇØ
+void input(int amount, int choose) { //ê°’ì„ ë¶ˆëŸ¬ì˜¤ê¸° ìœ„í•´
     
-    switch (choose) { //choose¿¡¼­ ÀÔ·ÂÇÑ°ª¿¡¼­ ¿Ã¹Ù¸¥ °É Ã£¾Æ ½ÇÇà
+    switch (choose) { //chooseì—ì„œ ì…ë ¥í•œê°’ì—ì„œ ì˜¬ë°”ë¥¸ ê±¸ ì°¾ì•„ ì‹¤í–‰
     case 1:
 
 
-        printf("\n%d¿øÀº ´Ş·¯·Î È¯Àü½Ã %.5f´Ş·¯ ÀÔ´Ï´Ù.", amount, (float)amount / 1300);
+        printf("\n%dì›ì€ ë‹¬ëŸ¬ë¡œ í™˜ì „ì‹œ %.5fë‹¬ëŸ¬ ì…ë‹ˆë‹¤.", amount, (float)amount / 1300);
         break;
 
     case 2:
 
-        printf("\n%d¿øÀº À¯·Î·Î È¯Àü½Ã %.5fÀ¯·Î ÀÔ´Ï´Ù.", amount, (float)amount / 1400);
+        printf("\n%dì›ì€ ìœ ë¡œë¡œ í™˜ì „ì‹œ %.5fìœ ë¡œ ì…ë‹ˆë‹¤.", amount, (float)amount / 1400);
         break;
 
     case 3:
 
-        printf("\n%d¿øÀº ÆÄ¿îµå·Î È¯Àü½Ã %.5fÆÄ¿îµå ÀÔ´Ï´Ù.", amount, (float)amount / 1600);
+        printf("\n%dì›ì€ íŒŒìš´ë“œë¡œ í™˜ì „ì‹œ %.5fíŒŒìš´ë“œ ì…ë‹ˆë‹¤.", amount, (float)amount / 1600);
         break;
 
     case 4:
 
-        printf("\n%d¿øÀº ¿£À¸·Î È¯Àü½Ã %.1f¿£ ÀÔ´Ï´Ù.", amount, (float)amount / 10);
+        printf("\n%dì›ì€ ì—”ìœ¼ë¡œ í™˜ì „ì‹œ %.1fì—” ì…ë‹ˆë‹¤.", amount, (float)amount / 10);
         break;
 
     case 5:
 
-        printf("\n%d¿øÀº À§¾ÈÀ¸·Î È¯Àü½Ã %.4fÀ§¾È ÀÔ´Ï´Ù.", amount, (float)amount / 190);
+        printf("\n%dì›ì€ ìœ„ì•ˆìœ¼ë¡œ í™˜ì „ì‹œ %.4fìœ„ì•ˆ ì…ë‹ˆë‹¤.", amount, (float)amount / 190);
         break;
     }
 }
@@ -219,18 +219,18 @@ int main() {
     int choose;
 
     
-    money(&amount, &choose); //money ÇÔ¼ö È£Ãâ
-    if (0 >= amount || amount >= 100000000) { //0 º¸´Ù ÀÛ°Å³ª 1¾ïº¸´Ù Å©¸é ÀçÁú¹®
-        printf("¿Ã¹Ù¸¥ °ªÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä.\n");
+    money(&amount, &choose); //money í•¨ìˆ˜ í˜¸ì¶œ
+    if (0 >= amount || amount >= 100000000) { //0 ë³´ë‹¤ ì‘ê±°ë‚˜ 1ì–µë³´ë‹¤ í¬ë©´ ì¬ì§ˆë¬¸
+        printf("ì˜¬ë°”ë¥¸ ê°’ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.\n");
     }
     else {
-        input(amount, choose); //¾Æ´Ï¶ó¸é inputÇÔ¼ö ½ÇÇà
+        input(amount, choose); //ì•„ë‹ˆë¼ë©´ inputí•¨ìˆ˜ ì‹¤í–‰
     }
     return 0;
 }
 
 
-//ÃÖ´ñ°ª ±¸ÇÏ±â
+//ìµœëŒ“ê°’ êµ¬í•˜ê¸°
 /*#include <stdio.h>
 int main()
 {
@@ -243,12 +243,12 @@ int main()
         if (str1[i] > max) max = str1[i];
     }
 
-    printf("ÃÖ´ë °ªÀº %dÀÔ´Ï´Ù!", max);
+    printf("ìµœëŒ€ ê°’ì€ %dì…ë‹ˆë‹¤!", max);
     return 0;
 
 }*/
 
-// ÃÖ¼Ú°ª ±¸ÇÏ±â
+// ìµœì†Ÿê°’ êµ¬í•˜ê¸°
 /*#include <stdio.h>
 int main()
 {
@@ -260,13 +260,13 @@ int main()
     
         if (str1[i] < minimun) minimun = str1[i];
     }
-    printf("ÃÖ¼Ú°ª : %d", minimun);
+    printf("ìµœì†Ÿê°’ : %d", minimun);
     return 0;
 }
 */
 
 
-//Àç±ÍÇÔ¼ö
+//ì¬ê·€í•¨ìˆ˜
 
 /*
 #include <stdio.h>
@@ -300,13 +300,13 @@ int main() {
 }
 */
 
-//Àç±ÍÇÔ¼ö ½Ç½À
+//ì¬ê·€í•¨ìˆ˜ ì‹¤ìŠµ
 
 /*#include <stdio.h>
 
 void sum(int n,int current) {
     if (n == 0) {
-        printf("1¿¡¼­ 10±îÁöÀÇ ÇÕ : %d\n", current);
+        printf("1ì—ì„œ 10ê¹Œì§€ì˜ í•© : %d\n", current);
     }
     else {
         current += n;
@@ -317,7 +317,7 @@ void sum(int n,int current) {
 
 void sum1(int m, int current) {
     if (m == 0) {
-        printf("1¿¡¼­ 50±îÁöÀÇ ÇÕ : %d", current);
+        printf("1ì—ì„œ 50ê¹Œì§€ì˜ í•© : %d", current);
     }
     else {
         current += m;
@@ -336,7 +336,7 @@ int main() {
 }
 */
 
-// 2Â÷¿ø ¹è¿­
+// 2ì°¨ì› ë°°ì—´
 
 /*#include <stdio.h>
 int main() {
@@ -354,7 +354,7 @@ int main() {
 }
 */
 
-// 2Â÷¿ù ¹è¿­ ½Ç½À
+// 2ì°¨ì›” ë°°ì—´ ì‹¤ìŠµ
 
 /*#include <stdio.h>
 
@@ -389,7 +389,7 @@ int main() {
 }
 */
 
-// ÀÌÁß Æ÷ÀÎÅÍ
+// ì´ì¤‘ í¬ì¸í„°
 
 /*#include <stdio.h>
 
@@ -404,7 +404,7 @@ int main() {
 }
 */
 
-// ÀÌÁßÆ÷ÀÎÅÍ ½Ç½À
+// ì´ì¤‘í¬ì¸í„° ì‹¤ìŠµ
 
 /*#include <stdio.h>
 
@@ -420,7 +420,7 @@ int main() {
     int max = 0;
     int* ptr1= &max;
     int** ptr2= &ptr1;
-    printf("5°³ÀÇ ÀÚ¿¬¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+    printf("5ê°œì˜ ìì—°ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
     
     MAX(arr);
 
@@ -430,7 +430,7 @@ int main() {
         }
     }
     
-    printf("ÃÖ´ë °ª : %d", **ptr2);
+    printf("ìµœëŒ€ ê°’ : %d", **ptr2);
     return 0;
 }*/
 /*
@@ -448,14 +448,14 @@ int main() {
     int max = 0;
     int* ptr1 = &max;
     int** ptr2 = &ptr1;
-    printf("5°³ÀÇ ÀÚ¿¬¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+    printf("5ê°œì˜ ìì—°ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 
     for (int i = 0; i < 5; i++) {
         scanf("%d", &arr[i]);
     }
 
     MAX(ptr2, arr);
-    printf("ÃÖ´ë °ª : %d", max);
+    printf("ìµœëŒ€ ê°’ : %d", max);
     return 0;
 }
 */
@@ -475,21 +475,21 @@ int main() {
     int max = 0;
     int* ptr1 = &max;
     int** ptr2 = &ptr1;
-    printf("5°³ÀÇ ÀÚ¿¬¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä: ");
+    printf("5ê°œì˜ ìì—°ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”: ");
 
     for (int i = 0; i < 5; i++) {
         scanf("%d", &arr[i]);
     }
 
     MAX(ptr2, arr);
-    printf("ÃÖ´ë °ª: %d", max);
+    printf("ìµœëŒ€ ê°’: %d", max);
     return 0;
     
 }
 */
 
 
-// ½ÃÀÛ¹®Á¦
+// ì‹œì‘ë¬¸ì œ
 
 /*
 int plus(int num, int* ptr) {
@@ -505,7 +505,7 @@ int main() {
     int result = 0;
     int* ptr;
     ptr = &result;
-    printf("ÀÚ¿¬¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+    printf("ìì—°ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
     scanf("%d", &num);
     plus(num, ptr);
     printf("result : %d", result);
